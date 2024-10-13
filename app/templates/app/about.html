@@ -1,5 +1,22 @@
 {% extends 'app/base.html' %}
-
+{% load static %}
 {% block content %}
-    <h1>This is a about page</h1>
-{% endblock content %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <section class="about">
+        <div class="container">
+            <div class="about-image">
+             <img src="{% static 'images/bim.jpg' %}" width="300" height="300" alt="About us">
+            </div>
+            <div class="about-content">
+                <h2>About Us</h2>
+                <hr><p> I'm Divina the owner of Molina Transpo Service. we strive to provide you with the most up-to-date information possible
+                        regarding schedule, and new changes to service. Features that are user-friendly, with a passion
+                        for great customer satisfaction, help make public transportation easily accessible and stress-free for everyone.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+{% endblock %}
